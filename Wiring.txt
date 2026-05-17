@@ -1,0 +1,47 @@
+battery + --> battery protection board b+
+	- --> battery protection board b-
+
+battery protection board out+ --> one leg of switch
+			          other leg of switch --> step up vin+
+battery protection board out- --> step up vin-
+
+step up vout+ --> vin of esp32,vcc of oled,5v of dac, 5vcc of sd card module
+step up vout- --> grnd of everything, esp32,oled,sdcard,dac,buttons
+
+oled 0.96 inch
+vcc --> esp32 vin
+gnd --> esp32 gnd
+scl --> d13 (gprio 13)
+sda --> tx2 (gpio 17)
+
+DAC (VS1003/VS1053 mp3 decoder)
+5v --> esp32 vin
+gnd --> grnd of everything, esp32,oled,sdcard,dac,buttons
+xrst --> en
+miso --> d19 (gpio 19)
+mosi --> d21 (gpio 21)
+sclk --> d18 (gpio 18)
+dreq --> d4 (gpio 4)
+xcs --> d5 (gpio 5)
+xdcs --> rx2 (gpio 16)
+
+sd card module
+cs --> d22 (gpio22)
+sck --> d18 (gpio 18)
+mosi --> d21 (gpio 21)
+miso --> d19 (gpio 19)
+vcc --> esp32 vin
+gnd --> grnd of everything, esp32,oled,sdcard,dac,buttons
+
+push buttons
+put such that two legs on one side of divide
+of the two, one goes to gpio and connected through 10k ohm resistor to gnd
+other leg is to 3.3v of esp32
+
+play pause --> d32 (gpio32)
+volume up --> (gpio 33)
+volume down --> (gpio 25)
+previous song --> (gpio 26)
+next song --> (gpio 27)
+shuffle --> (gpio 23)
+
