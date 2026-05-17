@@ -42,10 +42,10 @@ As for wiring, right now its given in wiring.txt which is a personal note I was 
 Q1)Why are you not using standard spi pins?  
 A)The standard SPI pin configuration caused everything to (figuratively) explode. After extensive testing with multiple pin combinations, I settled on the first fully stable configuration.
 
-Q2)Why not literally just use your phone or buy an mp3 player?
+Q2)Why not literally just use your phone or buy an mp3 player?  
 A) Yes, I could have just used my phone, but I wanted to build something cool. (rip ipod)
 
-Q3)Why do song names not update dynamically? Why manually define them?
+Q3)Why do song names not update dynamically? Why manually define them?  
 A) Long song names cause the SD card mount to fail. No I'm not joking. So I named all the mp3 files as 01.mp3, 02.mp3 etc and just made a hardcoded name to be displayed for each.
 
 ## Future improvements
