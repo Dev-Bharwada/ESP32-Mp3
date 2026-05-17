@@ -1,6 +1,6 @@
 # ESP32 MP3 Player
 
-![ESP32 MP3 Player](esp32_mp3_player.jpg)
+![ESP32 MP3 Player](prototype.jpg)
 
 A custom-built MP3 player using an ESP32, VS1053 audio decoder, SD card storage, OLED display, and physical playback controls.
 
