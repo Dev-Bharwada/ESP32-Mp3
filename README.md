@@ -35,7 +35,7 @@ The primary application logic is located in:
 
 Flash the project to an ESP32 using PlatformIO or whatever method you prefer with the required dependencies installed.
 
-As for wiring, right now it's given in wiring.txt which is a personal note I was using to keep track of the wiring. It is a bit confusing but it will be replaced with a proper wiring diagram later (also check pcb.jpg it will help you get a better idea of the wiring).
+As for wiring, right now it's given in wiring.txt which is a personal note I was using to keep track of the wiring. It is a bit confusing but it will be replaced with a proper wiring diagram later.
 
 
 ## Questions which you will probably have after looking at my code
@@ -52,5 +52,3 @@ A) Long song names cause the SD card mount to fail. No I'm not joking. So I name
 - Organise the repo 
 - Replace wiring.txt file with actual diagram
 - Make a pcb (in progress!)
-
-![PCB diagram](pcb.jpg)
